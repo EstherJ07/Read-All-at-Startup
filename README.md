@@ -171,15 +171,10 @@ The firmware compares the stored CRC with the calculated CRC. On a match, it cop
 
 ## Build and Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/EstherJ07/Read-All-at-Startup.git
-   ```
-2. Wire the M24C04 to LPI2C0 (SDA, SCL, power, ground) and connect the board's UART to the PC.
-3. Open the project in S32 Design Studio and confirm the target device, SDK configuration, I²C instance, EEPROM address and block address definitions.
-4. Build the project. It should finish with 0 errors and 0 warnings.
-5. Open PuTTY on the board's COM port, using the baud rate from your LPUART configuration (8 data bits, no parity, 1 stop bit).
-6. Program the S32K144 board and observe the UART output.
+1. Open the project in S32 Design Studio and confirm the target device, SDK configuration, I²C instance, EEPROM address and block address definitions.
+2. Build the project. It should finish with 0 errors and 0 warnings.
+3. Open PuTTY on the board's COM port, using the baud rate from your LPUART configuration (8 data bits, no parity, 1 stop bit).
+4. Program the S32K144 board and observe the UART output.
 
 ### Important: first run versus preserved-data runs
 
