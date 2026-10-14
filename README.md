@@ -54,16 +54,6 @@ After an ECU reset or power cycle, application data may need to be restored from
 | UART connection (onboard bridge or external USB-serial adapter) | Diagnostic output to the PC |
 | Jumper wires and I²C pull-up resistors | EEPROM wiring |
 
-### Wiring
-
-Fill in the pins from your pin configuration:
-
-| Signal | MCU pin | EEPROM pin |
-|---|---|---|
-| I²C SDA (LPI2C0) | `<your pin>` | SDA |
-| I²C SCL (LPI2C0) | `<your pin>` | SCL |
-| UART TX (LPUART1) | `<your pin>` | n/a |
-| Power / GND | 3.3 V / GND | VCC / VSS |
 
 ### Software
 
