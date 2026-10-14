@@ -234,7 +234,7 @@ ALL BLOCKS VALID
 
 A short demonstration of the firmware running on the S32K144 with the M24C04 EEPROM.
 
-[▶ Watch the demo video](https://drive.google.com/file/d/1dY0e4ZcM5281QlaeNdZHrcdWb3Bs3-b0/view?usp=drivesdk)
+[▶ Watch the demo video]([https://drive.google.com/file/d/1dY0e4ZcM5281QlaeNdZHrcdWb3Bs3-b0/view?usp=drivesdk](https://github.com/EstherJ07/Read-All-at-Startup))
 
 ### Hardware setup
 
