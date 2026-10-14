@@ -7,7 +7,7 @@
 
 **An embedded C exercise implementing EEPROM Read-All, RAM-mirror restoration, CRC-8 validation, and failed-block reporting over UART on the NXP S32K144.**
 
-> **Project status:** Working. The firmware has been run on an S32K144 board with an M24C04 EEPROM, and the captured UART output for a valid run and a CRC-mismatch run is shown in [Testing and Validation](#testing-and-validation). Results come from the authors' own setup and have not been independently verified.
+> **Project status:** Working. The firmware has been run on an S32K144 board with an M24C04 EEPROM, and the captured UART output for a valid run and a CRC-mismatch run is shown in [Testing and Validation](#testing-and-validation).
 
 ## Overview
 
