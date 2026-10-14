@@ -307,7 +307,6 @@ Read-All-at-Startup/
 - **RAM mirror cleared before each read.** A failed block never holds stale data.
 - **CRC over payload only.** The stored CRC is excluded from its own calculation.
 - **Static helpers.** Only the init and run functions are exposed, which keeps the module's interface small.
-- **Synchronous and blocking.** Chosen for clarity. Real AUTOSAR NvM is asynchronous.
 
 ## Known Limitations and Review Notes
 
