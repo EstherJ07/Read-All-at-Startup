@@ -89,7 +89,6 @@ flowchart TD
     L --> P
     P -- Yes --> H
     P -- No --> Q[NvM_PrintResults over UART]
-    Q --> R[while 1 loop]
 ```
 
 The application calls `NvM_Init()` and then `NvM_Run()` from `main()`, which then falls into an infinite loop.
