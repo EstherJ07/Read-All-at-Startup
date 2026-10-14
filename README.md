@@ -230,11 +230,6 @@ ALL BLOCKS VALID
 `EEPROM WRITE COMMAND OK` only means the I²C transfer was accepted. Whether the data was stored correctly is proven by the CRC check during Read-All.
 
 ## Testing and Validation
-## Video Demo
-
-A short demonstration of the firmware running on the S32K144 with the M24C04 EEPROM.
-
-[▶ Watch the demo video](https://drive.google.com/file/d/1dY0e4ZcM5281QlaeNdZHrcdWb3Bs3-b0/view?usp=drivesdk)
 
 ### Hardware setup
 
