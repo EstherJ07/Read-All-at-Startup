@@ -326,7 +326,7 @@ Electronics and Communication Engineering · Aspiring Automotive Embedded Engine
 Electronics and Communication Engineering · 3rd Year
 
 [![GitHub](https://img.shields.io/badge/GitHub-EstherJ07-181717?logo=github)](https://github.com/EstherJ07/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Esther%20Jeba-0A66C2?logo=linkedin)](https://www.linkedin.com/in/esther-jeba-385918380/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Esther%20Jeba-0A66C2?logo=linkedin)](www.linkedin.com/in/estherjeba07)
 
 ## References
 
