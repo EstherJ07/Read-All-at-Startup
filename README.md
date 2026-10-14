@@ -278,10 +278,6 @@ Failed block ID: 2
 
 Blocks 1 and 3 still report `CRC OK - BLOCK VALID`, which shows that one failure does not stop the pass.
 
-A second test is to disconnect the EEPROM's SDA or SCL line and reset the board. The reads then fail with `I2C READ FAILED` and all three block IDs are logged.
-
-**After testing:** flash the `main` branch once with `WRITE_INITIAL_DATA` set to `1U`, which overwrites the corrupted block with good data.
-
 ### Test summary
 
 | Test | Setup | Expected result |
