@@ -21,6 +21,28 @@ blocks failed.
 - NXP S32K144 board
 - M24C04 EEPROM (512 bytes, 16-byte pages) on LPI2C0
 - LPUART output to a serial terminal (PuTTY, 115200 8N1 by default; check your config)
+```mermaid
+flowchart TD
+    A[Application startup] --> B[NvM_Init]
+    B --> C[Initialize clocks, pins, UART and LPI2C]
+    C --> D[NvM_Run]
+    D --> E{Initial write enabled?}
+    E -- Yes --> F[NvM_WriteAll]
+    E -- No --> G[NvM_ReadAll]
+    F --> G
+    G --> H[Iterate registered block table]
+    H --> I[Read EEPROM record]
+    I --> J{I2C read successful?}
+    J -- No --> K[Record failed block ID]
+    J -- Yes --> L[Calculate CRC-8]
+    L --> M{CRC matches?}
+    M -- Yes --> N[Copy payload into RAM mirror]
+    M -- No --> K
+    N --> O{More blocks?}
+    K --> O
+    O -- Yes --> H
+    O -- No --> P[Print summary over UART]
+```
 
 ## Project structure
 
