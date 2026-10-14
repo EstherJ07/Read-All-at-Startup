@@ -9,27 +9,6 @@
 
 > **Project status:** Working. The firmware has been run on an S32K144 board with an M24C04 EEPROM, and the captured UART output for a valid run and a CRC-mismatch run is shown in [Testing and Validation](#testing-and-validation). Results come from the authors' own setup and have not been independently verified.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Objectives](#objectives)
-- [Features](#features)
-- [Hardware and Software](#hardware-and-software)
-- [Architecture](#architecture)
-- [Implementation Details](#implementation-details)
-- [Data Layout and Registered Blocks](#data-layout-and-registered-blocks)
-- [CRC-8 Validation](#crc-8-validation)
-- [Build and Run](#build-and-run)
-- [Expected Output](#expected-output)
-- [Testing and Validation](#testing-and-validation)
-- [Repository Structure](#repository-structure)
-- [Design Decisions](#design-decisions)
-- [Known Limitations and Review Notes](#known-limitations-and-review-notes)
-- [Future Enhancements](#future-enhancements)
-- [Authors](#authors)
-- [References](#references)
-
 ## Overview
 
 This project implements a simplified NvM-style Read-All operation for an embedded ECU application using an NXP S32K144 microcontroller and an external **M24C04 I²C EEPROM**.
