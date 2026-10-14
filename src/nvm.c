@@ -111,7 +111,7 @@ static void NvM_WriteAll(void)
     	}
         crc=CalculateCRC(record, BLOCK_LENGTH);
         record[BLOCK_LENGTH] = crc;
-        if (i == 1U){ record[0] ^= 0xFFU; } 
+        if(i==1U){record[0]^=0xFFU;} 
         len=sprintf(txBuff,"Writing block ID: %u\r\n",(unsigned int)NVM_Blocks[i].Block_ID);
         if(len>0){
             UART_Print(txBuff);
