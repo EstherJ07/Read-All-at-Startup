@@ -305,8 +305,6 @@ Read-All-at-Startup/
 └── README.md
 ```
 
-Do not remove the generated SDK or build configuration files, since the S32 Design Studio project needs them.
-
 ## Design Decisions
 
 - **One pass, no early exit.** A failed block is logged and the loop continues, so every block is checked.
