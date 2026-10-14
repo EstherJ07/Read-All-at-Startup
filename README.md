@@ -282,7 +282,7 @@ Actual board and EEPROM setup:
 
 Actual UART output for valid records. All three blocks pass the CRC check:
 
-![PuTTY output: write phase, then all three blocks valid](images/putty_success.png)
+<img width="1007" height="752" alt="Screenshot 2026-10-14 091350" src="https://github.com/user-attachments/assets/6040afa6-c70a-40d8-99f5-df8fc30c9924" />
 
 ### Deliberately corrupted CRC
 
@@ -381,18 +381,12 @@ Do not remove the generated SDK or build configuration files, since the S32 Desi
 - Separate memory access, CRC and block-management logic into independently testable modules.
 - Extend the implementation toward AUTOSAR NvM concepts (asynchronous job queue) using the relevant specifications.
 
-## Authors
+## Author
 
-**Haritha Kanakam**  
-Electronics and Communication Engineering | Aspiring Automotive Embedded Engineer
-
-- GitHub: [@harithakanakam7](https://github.com/harithakanakam7)
-- Portfolio: [harithakanakam.netlify.app](https://harithakanakam.netlify.app)
-- LinkedIn: [Haritha Kanakam](https://www.linkedin.com/in/kharitha07/)
-
-**Esther J**
-
-- GitHub: [@EstherJ07](https://github.com/EstherJ07)
+- Esther Jeba J
+- Electronics and Communication Engineering, 3rd Year
+- LinkedIn: My LinkedIn Profile
+- GitHub: My GitHub Profile
 
 ## References
 
