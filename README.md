@@ -308,31 +308,6 @@ Read-All-at-Startup/
 - **CRC over payload only.** The stored CRC is excluded from its own calculation.
 - **Static helpers.** Only the init and run functions are exposed, which keeps the module's interface small.
 
-## Known Limitations and Review Notes
-
-- Blocks must be located below address `0x100`. The M24C04 carries its ninth address bit (A8) in the I²C device address, and that case is not handled. The code sends only the low eight bits of the address as the memory address.
-- The failure log is sized to `NVM_BLOCK_COUNT` and each block is logged at most once per run, so it cannot overflow. Keep that in mind if the logging logic changes.
-- No ROM defaults: a failed block stays zeroed, and no per-block recovery strategy is implemented.
-- No redundant block copies.
-- `WRITE_INITIAL_DATA = 1U` rewrites the EEPROM on every boot, which wears it over time. Use it only for the first run.
-- The EEPROM write delay is a fixed 6 ms rather than ACK polling.
-- The `Record:` debug print is hard-coded to 4 bytes and must change if `RECORD_SIZE` changes.
-- If the EEPROM part, its page size or the block addresses change, check that the record length and addresses stay consistent with the new device.
-- This is an educational project, not a production-ready ECU memory-management implementation.
-
-## Future Enhancements
-
-- Add explicit per-block status and failure-reason codes (I²C error versus CRC mismatch).
-- Load ROM default values for failed blocks, with configurable recovery handling.
-- Add redundant block storage with a fallback copy.
-- Write only the blocks that fail instead of rewriting everything.
-- Use ACK polling instead of the fixed write delay.
-- Handle EEPROM addresses at `0x100` and above.
-- Add repeatable fault-injection tests for CRC mismatch and I²C failures.
-- Add a requirements-to-test traceability table.
-- Separate memory access, CRC and block-management logic into independently testable modules.
-- Extend the implementation toward AUTOSAR NvM concepts (asynchronous job queue) using the relevant specifications.
-
 ## Author
 
 **Haritha Kanakam**
