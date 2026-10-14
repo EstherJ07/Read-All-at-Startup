@@ -342,10 +342,18 @@ Do not remove the generated SDK or build configuration files, since the S32 Desi
 
 ## Author
 
-- Esther Jeba J
-- Electronics and Communication Engineering, 3rd Year
-- LinkedIn: My LinkedIn Profile
-- GitHub: My GitHub Profile
+**Haritha Kanakam**
+Electronics and Communication Engineering · Aspiring Automotive Embedded Engineer
+
+[![GitHub](https://img.shields.io/badge/GitHub-harithakanakam7-181717?logo=github)](https://github.com/harithakanakam7)
+[![Portfolio](https://img.shields.io/badge/Portfolio-harithakanakam.netlify.app-00C7B7)](https://harithakanakam.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Haritha%20Kanakam-0A66C2?logo=linkedin)](https://www.linkedin.com/in/kharitha07/)
+
+**Esther Jeba J**
+Electronics and Communication Engineering · 3rd Year
+
+[![GitHub](https://img.shields.io/badge/GitHub-EstherJ07-181717?logo=github)](https://github.com/EstherJ07/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Esther%20Jeba-0A66C2?logo=linkedin)](https://www.linkedin.com/in/esther-jeba-385918380/)
 
 ## References
 
