@@ -51,23 +51,19 @@ After an ECU reset or power cycle, application data may need to be restored from
 | NXP S32K144 evaluation board | Microcontroller running the NvM code |
 | M24C04 EEPROM (512 bytes, 16-byte pages) | Non-volatile storage, I²C address `0x50` |
 | USB connection | Programming, debugging and power |
-| UART connection (onboard bridge or external USB-serial adapter) | Diagnostic output to the PC |
-| Jumper wires and I²C pull-up resistors | EEPROM wiring |
 
 
 ### Software
 
 | Area | Technology |
 |---|---|
-| Language | Embedded C |
+| Language | C |
 | MCU | NXP S32K144 (ARM Cortex-M4F) |
 | IDE | NXP S32 Design Studio 3.5 |
 | Drivers | S32K SDK: `CLOCK_DRV`, `PINS_DRV`, `LPUART_DRV`, `LPI2C_DRV`, `OSIF` |
 | Peripherals | LPI2C0 (EEPROM), LPUART1 (logging) |
 | Terminal | PuTTY (serial) |
 | Version control | Git and GitHub |
-
-**Before publishing a tagged release:** record the exact board revision, SDK version and compiler version used.
 
 ## Architecture
 
