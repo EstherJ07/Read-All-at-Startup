@@ -11,7 +11,7 @@
 
 ## Overview
 
-This project implements a simplified NvM-style Read-All operation for an embedded ECU application using an NXP S32K144 microcontroller and an external **M24C04 I²C EEPROM**.
+
 
 At startup, the firmware iterates over a registered block table, reads each block record from the EEPROM, validates the payload using **CRC-8**, and copies valid payload bytes into the associated RAM mirror. If an I²C read fails or the CRC does not match, the block ID is added to a failed-block list, the RAM mirror stays zeroed, and the outcome is reported through UART.
 
