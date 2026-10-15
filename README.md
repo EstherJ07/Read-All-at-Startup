@@ -234,6 +234,7 @@ ALL BLOCKS VALID
 ## Video Demo
 
 A short demonstration of the firmware running on the S32K144 with the M24C04 EEPROM: first-run write, Read-All with all blocks valid, and the CRC-mismatch case.
+
 [▶ Watch the demo video](https://youtu.be/B7QZzPAF20A?si=tK3X8_dVHonOmeVE)
 
 ### Hardware setup
